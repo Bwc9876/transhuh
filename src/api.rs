@@ -44,7 +44,7 @@ impl Api {
         Self {
             vehicle_points_endpoint: format!(
                 "{}{}",
-                api_base.trim_start_matches('/'),
+                api_base.trim_end_matches('/'),
                 VEHICLE_POINTS_ENDPOINT
             ),
         }
