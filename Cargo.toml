@@ -1,0 +1,12 @@
+[package]
+name = "transhuh"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.91"
+clap = { version = "4.5.20", features = ["derive"] }
+notify-rust = "4.11.3"
+reqwest = { version = "0.12.9", features = ["blocking", "charset", "http2", "json", "rustls-tls"], default-features = false }
+serde = { version = "1.0.214", features = ["derive"] }
+serde_json = "1.0.132"
